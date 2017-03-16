@@ -2,7 +2,7 @@ require 'spec_helper'
 
 FakeWeb.allow_net_connect = true
 
-unless File.exists?(File.join(File.dirname(__FILE__), 'remote.yml'))
+unless File.exist?(File.join(File.dirname(__FILE__), 'remote.yml'))
   STDERR.puts "\nERROR: Make sure a remote.yml file exists at ./spec/remote/remote.yml\n\n"
   abort
 end
