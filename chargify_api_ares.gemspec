@@ -1,20 +1,20 @@
 Gem::Specification.new do |s|
   s.specification_version = 3 if s.respond_to? :specification_version=
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new('>= 0') if s.respond_to? :required_rubygems_version=
   s.rubygems_version = '1.3.7'
-  
+
   s.name    = 'chargify_api_ares'
   s.version = '0.6.1'
   s.date    = '2013-02-26'
   s.summary = 'A Chargify API wrapper for Ruby using ActiveResource'
   s.description = ''
-  s.authors = ["Michael Klett", "Nathan Verni", "Graham McIntire", "Jeremy W. Rowe", "Rodrigo Franco", "Shay Frendt"]
+  s.authors = ['Michael Klett', 'Nathan Verni', 'Graham McIntire', 'Jeremy W. Rowe', 'Rodrigo Franco', 'Shay Frendt']
   s.email = 'support@chargify.com'
   s.homepage = 'http://github.com/chargify/chargify_api_ares'
-  
+
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.require_paths = %w[lib]
+  s.require_paths = %w(lib)
 
   # Runtime Dependencies
   s.add_runtime_dependency('activeresource', '>= 3.0.0')
